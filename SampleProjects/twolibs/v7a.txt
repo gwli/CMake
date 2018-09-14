@@ -1,0 +1,32 @@
+[armeabi-v7a] Compile thumb  : twolib-second <= second.c
+I:/NVPACK/android-ndk-r15c/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+ -MMD
+ -MP
+ -MF ./obj/local/armeabi-v7a/objs/twolib-second/second.o.d
+ -gcc-toolchain I:/NVPACK/android-ndk-r15c/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64
+ -fpic
+ -ffunction-sections
+ -funwind-tables
+ -fstack-protector-strong
+ -Wno-invalid-command-line-argument
+ -Wno-unused-command-line-argument
+ -no-canonical-prefixes
+ -fno-integrated-as
+ -g
+ -target armv7-none-linux-androideabi14
+ -march=armv7-a
+ -mfloat-abi=softfp
+ -mfpu=vfpv3-d16
+ -mthumb
+ -Os
+ -DNDEBUG 
+ -Ijni  
+ -DANDROID 
+ -D__ANDROID_API__=14
+ -Wa,--noexecstack
+ -Wformat
+ -Werror=format-security 
+ --sysroot I:/NVPACK/android-ndk-r15c/build//../sysroot
+ -isystem I:/NVPACK/android-ndk-r15c/build//../sysroot/usr/include/arm-linux-androideabi
+ -c  jni/second.c
+ -o ./obj/local/armeabi-v7a/objs/twolib-second/second.o

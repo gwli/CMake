@@ -1,0 +1,27 @@
+[arm64-v8a] Compile        : twolib-second <= second.c
+I:/NVPACK/android-ndk-r15c/build//../toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+ -MMD
+ -MP
+ -MF ./obj/local/arm64-v8a/objs/twolib-second/second.o.d
+ -gcc-toolchain I:/NVPACK/android-ndk-r15c/build//../toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64
+ -target aarch64-none-linux-android
+ -ffunction-sections
+ -funwind-tables
+ -fstack-protector-strong
+ -fpic
+ -Wno-invalid-command-line-argument
+ -Wno-unused-command-line-argument
+ -no-canonical-prefixes 
+ -g
+ -O2
+ -DNDEBUG 
+ -Ijni  
+ -DANDROID 
+ -D__ANDROID_API__=21
+ -Wa,--noexecstack
+ -Wformat
+ -Werror=format-security 
+ --sysroot I:/NVPACK/android-ndk-r15c/build//../sysroot
+ -isystem I:/NVPACK/android-ndk-r15c/build//../sysroot/usr/include/aarch64-linux-android
+ -c  jni/second.c
+ -o ./obj/local/arm64-v8a/objs/twolib-second/second.

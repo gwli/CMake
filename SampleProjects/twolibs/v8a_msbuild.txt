@@ -1,0 +1,20 @@
+ -gcc-toolchain I:/NVPACK/android-ndk-r15c/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64
+ -target aarch64-none-linux-android
+ -Wl,-soname,libAndroid152.so
+ -shared
+ --sysroot=I:/NVPACK/android-ndk-r15c/platforms/android-26/arch-arm64
+ -fuse-ld=bfd.exe
+ -Wl,-rpath-link="I:/NVPACK/android-ndk-r15c/platforms/android-26/arch-arm64/usr/lib"
+ -Wl,--no-undefined
+ -Wl,--no-allow-shlib-undefined
+ -Wl,--unresolved-symbols=report-all
+ -Wl,-z,noexecstack
+ -Wl,-z,relro
+ -Wl,-z,now
+ -L"I:/NVPACK/android-ndk-r15c/platforms/android-26/arch-arm64/usr/lib"
+ -L"I:/NVPACK/android-ndk-r15c/sources/cxx-stl/llvm-libc++/libs/arm64-v8a" "I:/NVPACK/android-ndk-r15c/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++_shared.so" "I:/NVPACK/android-ndk-r15c/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libandroid_support.a"
+ -lc
+ -lm
+ -llog
+ -lgcc
+ -oI:/VSProject/Android152/Tegra-Android/Debug/libAndroid152.so 

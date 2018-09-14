@@ -1,0 +1,22 @@
+   I:\NVPACK\android-ndk-r15c\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe Tegra-Android/Debug/Android152.o Tegra-Android/Debug/first.o Tegra-Android/Debug/second.o 
+ -gcc-toolchain I:/NVPACK/android-ndk-r15c/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64
+ -target armv7-none-linux-androideabi
+ -Wl,-soname,libAndroid152.so
+ -shared
+ --sysroot=I:/NVPACK/android-ndk-r15c/platforms/android-19/arch-arm
+ -fuse-ld=bfd.exe
+ -Wl,-rpath-link="I:/NVPACK/android-ndk-r15c/platforms/android-19/arch-arm/usr/lib"
+ -Wl,--no-undefined
+ -Wl,--no-allow-shlib-undefined
+ -Wl,--unresolved-symbols=report-all
+ -Wl,-z,noexecstack
+ -Wl,-z,relro
+ -Wl,-z,now
+ -L"I:/NVPACK/android-ndk-r15c/platforms/android-19/arch-arm/usr/lib"
+ -L"I:/NVPACK/android-ndk-r15c/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a" "I:/NVPACK/android-ndk-r15c/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libc++_shared.so" "I:/NVPACK/android-ndk-r15c/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libandroid_support.a" "I:/NVPACK/android-ndk-r15c/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libunwind.a"
+ -lc
+ -lm
+ -llog
+ -lgcc
+ -oI:/VSProject/Android152/Tegra-Android/Debug/libAndroid152.so 
+         Android152.vcxproj -> I:\VSProject\Android152\Tegra-Android\Debug\libAndroid152.so
